@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 4rem; /* Increased font size */
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .highlight {
+            color: #6c43af; /* Purple color */
+        }
+
+        .highlight-red {
+            color: red;
+        }
+
+        .highlight-rainbow {
+            color: rainbow;
+        }
+
+        .highlight-yellow {
+            color: yellow;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .invitation {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to <span class="highlight">Dark Domain</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#friends">Members</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome, friends, to the fringes of the digital realm!</h2>
+            <p class="intro-text">Here, at <span class="highlight">Shadow Web</span>, we weave experiences crafted for your pure enjoyment.</p>
+            <p class="invitation">Step into the shadows. We invite you, especially you, <span class="highlight-red">Babaji</span>, to explore a world designed to spark joy and ignite your inner explorer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Section</h2>
+            <p class="about-text">Step into the shadows, where a tapestry of wonder awaits. Unveiling the secrets of the <span class="highlight">Shadow Website</span>, a realm of amusement beckons, promising untold treasures for the curious explorer.</p>
+        </div>
+    </section>
+
+    <section id="friends" class="section">
+        <div class="container">
+            <h2 class="blue-text">Members of Dark Domain</h2>
+            <ul class="friends-list">
+                <li><span class="highlight">Shadow</span></li>
+                <li><span class="highlight-red">Dracule</span></li>
+                <li><span class="highlight-rainbow">Shaheer</span></li>
+                <li><span class="highlight-yellow">Malahim yaan</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Section</h2>
+            <p>You can add a contact form or contact information here.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shadow Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Optional: JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* Reset styles and basic setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Default font */
+    background-color: #fff; /* White background color */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(173, 216, 230, 0.7); /* Light blue with transparency */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Section styles */
+.section {
+    padding: 80px 0;
+    text-align: center;
+    position: relative; /* Ensure relative positioning */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* About Section */
+.about-text {
+    font-weight: bold; /* Bold text */
+    font-family: 'Oswald', sans-serif; /* Stylish font */
+    color: #000; /* Black color */
+}
+
+/* Introductory text */
+.intro-text {
+    font-size: 1.3rem; /* Larger font size */
+    font-family: 'Oswald', sans-serif; /* Stylish font */
+    margin-bottom: 20px;
+}
+
+/* Invitation text */
+.invitation {
+    font-size: 1.3rem; /* Larger font size */
+    font-family: 'Oswald', sans-serif; /* Stylish font */
+    margin-bottom: 20px;
+}
+
+/* Friends section */
+.friends-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.friends-list li {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.friends-list li span {
+    font-weight: bold;
+}
+
+.friends-list li .highlight-shadow {
+    color: black; /* Black color for "Shadow" */
+    font-weight: bold;
+}
+
+.friends-list li .highlight-dracule {
+    color: red; /* Red color for "Dracule" */
+    font-weight: bold;
+}
+
+/* Highlight styles */
+.highlight {
+    color: #000; /* Black color for "Shadow Website" */
+    font-weight: bold;
+}
+
+.highlight-red {
+    color: black; /* Black color for "Shadow" */
+    font-family: 'Oswald', sans-serif; /* Stylish font */
+    font-size: 1.5rem; /* Larger font size */
+}
+
+.highlight-rainbow {
+    /* Rainbow color for "Shaheer" */
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.highlight-yellow {
+    color: yellow; /* Yellow color for "Malahim yaan" */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(173, 216, 230, 0.7); /* Light blue with transparency */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
