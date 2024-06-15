@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow Website</title>
+    <title>Dark Domain</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -60,7 +60,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             position: relative; /* Ensure content is above the stars */
@@ -83,7 +83,9 @@
         }
 
         .highlight-rainbow {
-            color: rainbow;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .highlight-yellow {
@@ -99,15 +101,53 @@
         .intro-text {
             font-size: 1.5rem;
             margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .invitation {
             font-size: 1.2rem;
             font-style: italic;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .blue-text {
             color: blue;
+        }
+
+        .white-text {
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* White text shadow for outline effect */
+        }
+
+        .friends-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .friends-list li {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        iframe.game-embed {
+            width: 100%;
+            height: 800px; /* Increased height for better game visibility */
+            border: none;
+            outline: 2px solid white; /* White outline for the game iframe */
         }
     </style>
 </head>
@@ -124,6 +164,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#friends">Members</a></li>
+                    <li><a href="#game">Game</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -147,13 +188,20 @@
 
     <section id="friends" class="section">
         <div class="container">
-            <h2 class="blue-text">Members of Dark Domain</h2>
+            <h2 class="white-text">Members of Dark Domain</h2>
             <ul class="friends-list">
                 <li><span class="highlight">Shadow</span></li>
                 <li><span class="highlight-red">Dracule</span></li>
                 <li><span class="highlight-rainbow">Shaheer</span></li>
                 <li><span class="highlight-yellow">Malahim yaan</span></li>
             </ul>
+        </div>
+    </section>
+
+    <section id="game" class="section">
+        <div class="container">
+            <h2>Play a Game</h2>
+            <iframe class="game-embed" src="https://skribbl.io"></iframe>
         </div>
     </section>
 
@@ -175,7 +223,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Shadow Website. All rights reserved.</p>
+            <p>&copy; 2024 Dark Domain. All rights reserved.</p>
         </div>
     </footer>
 
